@@ -7,3 +7,4 @@ Este es mi primer repositorio Git.
 - git status
 - git add
 - git commit
+## Controlado
