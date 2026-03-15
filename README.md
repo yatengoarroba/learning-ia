@@ -8,3 +8,8 @@ Este es mi primer repositorio Git.
 - git add
 - git commit
 ## Controlado
+
+## Nuevos comandos del Módulo 2:
+- git log --oneline
+- git diff
+- git show
