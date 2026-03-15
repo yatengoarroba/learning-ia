@@ -1,6 +1,5 @@
 # Mi Proyecto de Práctica Git
 
-Este es mi primer repositorio Git.
 
 ## Lo que estoy aprendiendo:
 - git init
@@ -13,3 +12,4 @@ Este es mi primer repositorio Git.
 - git log --oneline
 - git diff
 - git show
+# Añadida nueva seccion
