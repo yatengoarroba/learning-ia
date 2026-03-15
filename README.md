@@ -13,3 +13,4 @@
 - git diff
 - git show
 # Añadida nueva seccion
+## Editado desde GitHub
