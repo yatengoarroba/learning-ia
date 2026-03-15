@@ -121,6 +121,59 @@ git push
 
 ---
 
+## Módulo 5: Pull Requests (PR)
+
+### ¿Qué es un Pull Request?
+Un Pull Request es una solicitud para que tus cambios sean revisados y fusionados en la rama principal. A diferencia de `git merge` (que fusiona directamente), un PR permite:
+- Revisión de código por el equipo
+- Comentarios y discusión sobre los cambios
+- Aprobación antes de fusionar
+- Historial documentado de decisiones
+
+### Flujo con Pull Request
+```bash
+# 1. Crear y cambiar a nueva rama
+git checkout -b feature/mi-funcionalidad
+
+# 2. Hacer cambios y commits
+git add .
+git commit -m "Implementar funcionalidad"
+
+# 3. Subir la rama a GitHub (NO fusionar localmente)
+git push -u origin feature/mi-funcionalidad
+
+# 4. Ir a GitHub y crear el Pull Request desde la interfaz web
+#    - Escribir título y descripción
+#    - Asignar revisores (opcional)
+#    - Ver los cambios (diff)
+
+# 5. Esperar revisión y aprobación
+
+# 6. Fusionar desde GitHub (botón "Merge pull request")
+
+# 7. Sincronizar tu repositorio local
+git checkout main
+git pull
+
+# 8. Eliminar rama local (opcional)
+git branch -d feature/mi-funcionalidad
+```
+
+### Diferencia: git merge vs Pull Request
+
+**git merge (local):**
+- Fusión directa e inmediata
+- Sin revisión
+- Solo tú decides
+
+**Pull Request (GitHub):**
+- Revisión de código en equipo
+- Comentarios y discusión
+- Aprobación antes de fusionar
+- Más profesional y seguro
+
+---
+
 ## Convenciones y Buenas Prácticas
 
 ### Nombres de Ramas
@@ -155,9 +208,5 @@ git push
 - **main/master** - Nombre de la rama principal
 - **HEAD** - Puntero al commit actual donde estás trabajando
 - **hash** - Identificador único de un commit (ej: c60723b)
-
-
-
- - Ejemplo de cómo deshacer cambios
-  - Ejemplo de cómo ver quién modificó una línea
-  - Situaciones comunes del día a día
+- **Pull Request (PR)** - Solicitud para fusionar cambios con revisión de código
+- **Code Review** - Proceso de revisar código antes de fusionarlo
