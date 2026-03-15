@@ -155,3 +155,9 @@ git push
 - **main/master** - Nombre de la rama principal
 - **HEAD** - Puntero al commit actual donde estás trabajando
 - **hash** - Identificador único de un commit (ej: c60723b)
+
+
+
+ - Ejemplo de cómo deshacer cambios
+  - Ejemplo de cómo ver quién modificó una línea
+  - Situaciones comunes del día a día
